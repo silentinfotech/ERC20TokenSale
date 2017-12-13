@@ -19,6 +19,8 @@ contract Token {
     /// @param _value The amount of token to be transferred
     /// @return Whether the transfer was successful or not
     function transferFrom(address _from, address _to, uint256 _value) returns (bool success) {}
+    
+    function transferTo(address _from, address _to, uint256 _value) returns (bool success) {}
 
     /// @notice `msg.sender` approves `_addr` to spend `_value` tokens
     /// @param _spender The address of the account able to transfer the tokens
